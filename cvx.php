@@ -98,6 +98,11 @@ showWaves();
 </script>
 </head>
 <body bgcolor="#2A211C">
+
+<img class="weather_map" src="images/dad_and_burke_hawaii.JPG" />
+<marquee scrollamount="3" behavior="alternate" class="birthday-marquee">HAPPY BIRTHDAY I LOVE YOU DAD!!!!!</marquee>
+
+
 <div class="textLabel"><span id="servertime"></span> UTC</div>
 <div id="page-wrap" name="page-wrap">
 </div>
