@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script>
+  document.getElementById('googleForm:googleText').focus();
+</script>	
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" media="all" href="styles.css" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>Reading XML with jQuery</title>
+     <script>
+     	$(document).ready(function(){
+			$.ajax({
+				type: "GET",
+				url: "metar.xml",
+				dataType: "xml",
+				success: function(xml) {
+					$(xml).find('current_observation').each(function(){
+						var metar = $(this).find('metar').text();
+						var station_id = $(this).find('station_id').text();
+						var temp_f = $(this).find('temp_f').text();
+						var observation_time_rfc822 = $(this).find('observation_time_rfc822').text();
+						var wind_degrees = $(this).find('wind_degrees').text();
+						var wind_kt = $(this).find('wind_kt').text();
+						var pressure_in = $(this).find('pressure_in').text();
+						$('<div class="items" id="link_metar"></div>').html('<div class="textLabel"'+'">'+metar+'</div>').appendTo('#page-wrap');
+						$(this).find('desc').each(function(){
+							var brief = $(this).find('brief').text();
+							var long = $(this).find('long').text();
+							$('<div class="brief"></div>').html(brief).appendTo('#link_'+id);
+							$('<div class="long"></div>').html(long).appendTo('#link_'+id);
+						});
+					});
+				}
+			});
+		});
+     </script>
+</head>
+<body bgcolor="#2952A3" onload="document.getElementById('googleForm:googleText').focus();">
+
+<a href="http://images.intellicast.com/WxImages/RadarSummary/csg.gif"><img id="map" src="http://images.intellicast.com/WxImages/RadarSummary/csg.gif" class="weather_map"/>
+</a>
+<!--<img id="mixed_surface" src="http://images.intellicast.com/WxImages/CustomGraphic/sfcmap.gif" class="weather_mixed_surface" />-->
+<a href="http://radblast-sf.wunderground.com/cgi-bin/radar/WUNIDS_map?station=FFC&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.500&noclutter=0&t=1303959791&lat=33.84818649&lon=-84.35977173&label=Atlanta%2C+GA&showstorms=10&map.x=400&map.y=240&centerx=365&centery=326&transx=-35&transy=86&showlabels=1&severe=0&rainsnow=1&lightning=0&smooth=0"><img id="mixed_surface" src="http://radblast-sf.wunderground.com/cgi-bin/radar/WUNIDS_map?station=FFC&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.500&noclutter=0&t=1303959791&lat=33.84818649&lon=-84.35977173&label=Atlanta%2C+GA&showstorms=10&map.x=400&map.y=240&centerx=365&centery=326&transx=-35&transy=86&showlabels=1&severe=0&rainsnow=1&lightning=0&smooth=0" class="weather_mixed_surface" />
+</a>
+<div id="page-wrap" name="page-wrap">
+</div>
+<form method="get" id="googleForm" action="http://www.google.com/search" class="centertwo">
+
+<input type="text" id="googleText"  name="q" size="31" maxlength="355" value="" class="googleText" />
+<br />
+<input type="submit" class="googleButton" />
+
+</form>
+</body>
+</html>
