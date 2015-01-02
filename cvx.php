@@ -112,7 +112,11 @@ showWaves();
 <br />
 <center><a href="http://www.intellicast.com/Local/Weather.aspx?location=USMI0160">Intellicast Link</a></center>
 <br />
-<img id="radar" src="http://images.intellicast.com/WxImages/Radar/cad.gif" class="weather_map" />
+<center>
+<iframe src="http://burkeramsey.com/locations/21541" style="width: 960px; height: 710px;">
+</iframe>
+</center>
+<!-- <img id="radar" src="http://images.intellicast.com/WxImages/Radar/cad.gif" class="weather_map" /> -->
 <br />
 <img id="map" src="http://images.intellicast.com/WxImages/SurfaceAnalysis/r03_ICast.gif" class="weather_map"/>
 <br />
