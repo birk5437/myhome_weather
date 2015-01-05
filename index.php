@@ -98,13 +98,18 @@ setInterval("displaytime()", 1000);
 <input type="submit" class="googleButton" />
 
 </form>
-
+<br />
+<center>
+<iframe src="http://burkeramsey.com/locations/19615" style="width: 960px; height: 720px;">
+</iframe>
+</center>
+<br />
 <a href="http://images.intellicast.com/WxImages/RadarLoop/day_None_anim.gif"><img id="map" src="http://images.intellicast.com/WxImages/RadarLoop/day_None_anim.gif" class="weather_map"/></a>
 
 <a href="http://www.wunderground.com/radar/radblast.asp?ID=IND"><img id="map" src="http://radblast.wunderground.com/cgi-bin/radar/WUNIDS_map?station=IND&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.25&noclutter=0&showstorms=99&mapx=400&mapy=240&centerx=379.5&centery=303.5&transx=-20.5&transy=63.5&showlabels=1&severe=0&rainsnow=0&lightning=0&smooth=0&rand=23393941&lat=0&lon=0&label=you" class="weather_map"/></a>
 
 <a href="http://images.intellicast.com/WxImages/SurfaceAnalysis/r07_ICast.gif"><img id="map" src="http://images.intellicast.com/WxImages/SurfaceAnalysis/r07_ICast.gif" class="weather_map"/></a>
-<a href="http://images.intellicast.com/WxImages/Radar/day.gif"><img id="radar" src="http://images.intellicast.com/WxImages/Radar/day.gif" class="weather_map" /></a>
+<!-- <a href="http://images.intellicast.com/WxImages/Radar/day.gif"><img id="radar" src="http://images.intellicast.com/WxImages/Radar/day.gif" class="weather_map" /></a> -->
 <!--<a href="http://images.intellicast.com/WxImages/RadarSummary/csg.gif"><img id="map" src="http://images.intellicast.com/WxImages/RadarSummary/csg.gif" class="weather_map"/></a>-->
 <!--<img id="mixed_surface" src="http://images.intellicast.com/WxImages/CustomGraphic/sfcmap.gif" class="weather_mixed_surface" />-->
 <!--<a href="http://radblast-sf.wunderground.com/cgi-bin/radar/WUNIDS_map?station=FFC&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.500&noclutter=0&t=1303959791&lat=33.84818649&lon=-84.35977173&label=Atlanta%2C+GA&showstorms=10&map.x=400&map.y=240&centerx=365&centery=326&transx=-35&transy=86&showlabels=1&severe=0&rainsnow=1&lightning=0&smooth=0"><img id="mixed_surface" src="http://radblast-sf.wunderground.com/cgi-bin/radar/WUNIDS_map?station=FFC&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.500&noclutter=0&t=1303959791&lat=33.84818649&lon=-84.35977173&label=Atlanta%2C+GA&showstorms=10&map.x=400&map.y=240&centerx=365&centery=326&transx=-35&transy=86&showlabels=1&severe=0&rainsnow=1&lightning=0&smooth=0" class="weather_mixed_surface" /></a>-->
