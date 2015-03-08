@@ -124,8 +124,8 @@ showWaves();
 <br />
 <span id="waves"></span>
 <br />
-<img class="weather_map" src="http://97.83.105.61:1099/video" />
-<center><a href="http://97.83.105.61:1099/">Camera Settings</a></center>
+<img class="weather_map" src="http://75.129.208.43:1099/video" />
+<center><a href="http://75.129.208.43:1099/">Camera Settings</a></center>
 <br />
 <img class="weather_map" src="http://www.lakecharlevoix.org/webcam/depobeachmin00001.jpg" />
 <br />
