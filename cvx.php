@@ -112,6 +112,8 @@ showWaves();
 <br />
 <center><a href="http://www.intellicast.com/Local/Weather.aspx?location=USMI0160">Intellicast Link</a></center>
 <br />
+<center><a href="http://97.83.77.55:88/">HOUSE WEBCAM (Safari Only)</a></center>
+<br />
 <center>
 <iframe src="http://burkeramsey.com/locations/49720" style="width: 960px; height: 720px;">
 </iframe>
