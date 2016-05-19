@@ -112,7 +112,7 @@ showWaves();
 <br />
 <center><a href="http://www.intellicast.com/Local/Weather.aspx?location=USMI0160">Intellicast Link</a></center>
 <br />
-<center><a href="http://97.83.77.55:88/">HOUSE WEBCAM (Safari Only)</a></center>
+<center><a href="http://97.83.104.255:88/">HOUSE WEBCAM (Safari Only)</a></center>
 <br />
 <center>
 <iframe src="http://burkeramsey.com/locations/49720" style="width: 960px; height: 720px;">
@@ -126,6 +126,16 @@ showWaves();
 <br />
 <span id="waves"></span>
 <br />
+<span id="waves2">
+  <center>
+    <iframe src="http://www.crh.noaa.gov/greatlakes/" style="width: 800px; height: 615px;" scrolling="no">
+    </iframe>
+  </center>
+</span>
+<br />
+<span id="waves3">
+  <img id="water_temp" src="http://coastwatch.glerl.noaa.gov/glsea/cur/glsea_cur.png" class="weather_map"/>
+</span>
 <!-- <img class="weather_map" src="http://97.83.77.55:1099/video" />
 <center><a href="http://97.83.77.55:1099/">Camera Settings</a></center> -->
 <br />
